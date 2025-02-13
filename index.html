@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L1LSY91PG6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L1LSY91PG6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-L1LSY91PG6');
+    </script>
 
-  gtag('config', 'G-L1LSY91PG6');
-</script>
-    
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name = "description" content="Web  developer |Analog Clock|Rohit Kumar|">
-    <meta name="copyright" content = "Rohit Kumar">
-    <title>Analog Clock | Rohit Kumar /title>
+    <meta name="description" content="Web Developer | Analog Clock | Rohit Kumar">
+    <meta name="copyright" content="Rohit Kumar">
+    <title>Analog Clock | Rohit Kumar</title>
 
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+
+    <!-- JSON-LD Structured Data for SEO & Mobile-Friendliness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Analog Clock | Rohit Kumar",
+      "url": "https://yourwebsite.com",
+      "author": {
+        "@type": "Person",
+        "name": "Rohit Kumar"
+      },
+      "description": "A modern JavaScript-powered analog clock by Rohit Kumar.",
+      "image": "https://yourwebsite.com/clock-thumbnail.jpg",
+      "sameAs": [
+        "https://www.facebook.com/yourpage",
+        "https://twitter.com/yourprofile",
+        "https://www.linkedin.com/in/yourprofile"
+      ],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://yourwebsite.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+</head>
+<body>
     <h1>Analog Clock by Rohit Kumar</h1>
     <h2>Modern JavaScript Analog Clock</h2>
+    
     <div class="container">
-      <div class="clock">
-        <div class="seconds_bar"></div>
-        <div class="number_hours"></div>
+        <div class="clock">
+            <div class="seconds_bar"></div>
+            <div class="number_hours"></div>
 
-        <div class="hands_box">
-          <div class="hand hour"><i></i></div>
-          <div class="hand minute"><i></i></div>
-          <div class="hand second"><i></i></div>
+            <div class="hands_box">
+                <div class="hand hour"><i></i></div>
+                <div class="hand minute"><i></i></div>
+                <div class="hand second"><i></i></div>
+            </div>
         </div>
-      </div>
     </div>
 
     <script src="app.js"></script>
-  </body>
+</body>
 </html>
